@@ -27,7 +27,7 @@ const Contact = () => {
       // For now, just show success message since contact_inquiries table doesn't exist
       // TODO: Create contact_inquiries table via migration if needed
       console.log("Contact form submitted:", formData);
-      
+
       toast({
         title: "Message Sent",
         description: "Michael will get back to you personally within 24 hours.",
@@ -95,10 +95,8 @@ const Contact = () => {
                     Currently accepting select projects for Q2-Q3 2026. Reach out to schedule an initial site evaluation.
                   </p>
                 </div>
-                
-                <p className="text-[10px] text-muted-foreground mt-4 opacity-50 text-center lg:text-left">
-                  An affiliate of royscompany.com
-                </p>
+
+
               </motion.div>
 
               {/* Form Column */}

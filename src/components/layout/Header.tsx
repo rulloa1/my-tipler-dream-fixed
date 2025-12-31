@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import mcLogo from "@/assets/mc-logo.png";
 import { motion, AnimatePresence } from "framer-motion";
@@ -24,7 +24,7 @@ const Header = () => {
     { name: "Design", path: "/design" },
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
-    { name: "Chat with AI", path: "https://t.me/royAIsolutionsBot", external: true, icon: MessageCircle },
+
   ];
 
   return (

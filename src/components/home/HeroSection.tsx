@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, ChevronLeft, ChevronRight, ArrowRight, MessageCircle } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PremiumButton } from "@/components/ui/PremiumButton";
-import roysLogo from "@/assets/royscompany-logo.png";
+
 
 const heroImages = [
   "/projects/S. Florida High Rise Luxe/Miami001 COVER.jpg",
@@ -83,17 +83,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Partner Badge */}
-          <motion.a
-            href="https://royscompany.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-full mb-12 hover:bg-white/10 transition-colors"
-            whileHover={{ scale: 1.05 }}
-          >
-            <span className="text-[10px] tracking-widest text-cream/60 uppercase">Partner of</span>
-            <img src={roysLogo} alt="RoysCompany" className="h-5 w-auto opacity-80" />
-          </motion.a>
+
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link to="/portfolio">
@@ -111,16 +101,7 @@ const HeroSection = () => {
                 <ArrowRight className="w-4 h-4 ml-3" />
               </PremiumButton>
             </Link>
-            <a href="https://t.me/royAIsolutionsBot" target="_blank" rel="noopener noreferrer">
-              <PremiumButton
-                size="lg"
-                variant="outline"
-                className="border-cream/20 bg-white/5 backdrop-blur-md text-cream hover:bg-cream hover:text-charcoal px-12 py-8 min-w-[240px]"
-              >
-                Chat with AI
-                <MessageCircle className="w-4 h-4 ml-3" />
-              </PremiumButton>
-            </a>
+
           </div>
         </motion.div>
       </div>
