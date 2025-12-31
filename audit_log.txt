@@ -1,0 +1,602 @@
+Reading projects.ts...
+Found 91 unique image paths in projects.ts
+
+=== BROKEN PATHS (0) ===
+
+Scanning for unused images...
+
+=== UNUSED IMAGES (538) ===
+
+Folder: \projects\Abaco Luxe Boat House
+  - bahamas1.png
+  - Homes Built BoatHouse Style at Bakers Bay.png
+  - Whisk_d1a02c96626dfbeb9a54986f4fa3fd4ddr.jpeg
+
+Folder: \projects\Carmel Forest to Ocean View
+  - Carmel001 COVER.JPG
+  - Carmel002.JPG
+  - Carmel003.JPG
+  - Carmel004.JPG
+  - Carmel005.JPG
+  - Carmel006.JPG
+
+Folder: \projects\carmel-knolls
+  - 001 Cover Carmel Knolls, CA Remodel, Before & After.png
+  - 001.10 COVER.jpg
+
+Folder: \projects\carmel-valley-new
+  - carmel_valley_new1 cover.png
+
+Folder: \projects\Civil Engineering
+  - Civil001 COVER.jpg
+  - Civil0010.jpg
+  - Civil0011.jpg
+  - Civil0012.jpg
+  - Civil0013.jpg
+  - Civil0014.jpg
+  - Civil0015.jpg
+  - Civil0016.jpg
+  - Civil0017.jpg
+  - Civil0018.jpg
+  - Civil0019.jpg
+  - Civil002.JPG
+  - Civil0020.jpg
+  - Civil0021.jpg
+  - Civil0022.jpg
+  - Civil003.JPG
+  - Civil004.JPG
+  - Civil005.JPG
+  - Civil006.JPG
+  - Civil007.JPG
+  - Civil008.JPG
+  - Civil009.JPG
+
+Folder: \projects\coastal-restoration
+  - 001 COVER.JPG
+
+Folder: \projects\Coastal_Mountain_Residence
+  - 001 COVER.JPG
+
+Folder: \projects\design-pool
+  - 20250727_062448355_iOS 1.jpg
+  - 20250727_062452609_iOS.jpg
+  - 20250727_062455604_iOS 1.jpg
+  - 20250727_062503169_iOS 1.jpg
+  - 20250727_062505626_iOS 1.jpg
+  - 20250727_062525477_iOS 2.jpg
+  - 20250727_062531101_iOS 1.jpg
+  - 20250727_062533852_iOS 1.jpg
+  - 20250727_062536140_iOS 2.jpg
+  - 20250727_062547661_iOS 1.jpg
+  - 20250727_062547661_iOS 2.jpg
+  - 20250727_062547661_iOS.jpg
+  - 29088D41-20ED-451A-9478-B3F6A71E9EEF.JPG
+  - 7224048873272555730.jpg
+  - 8873049038962686341.jpg
+  - B51D7E23-55DF-4786-B213-AFF2E14D2C4C.jpg
+  - B5BC2910-FB6E-4C2B-9D67-F6DD6DB3DF47.JPG
+  - DACD2091-90E3-4F85-A4FF-21D26671BF8C (1).jpg
+  - F5BFD0E6-840F-4048-870D-5C9056A45059.JPG
+  - F9AA058C-A210-4A58-92A1-6FE599C5EE18.JPG
+  - image000000.jpg
+  - IMG_0163.JPG
+  - IMG_0166 2.JPG
+  - IMG_0166 3.JPG
+  - IMG_0166.JPG
+  - IMG_0167 2.JPG
+  - IMG_0167 3.JPG
+  - IMG_0167.JPG
+  - IMG_0168 2.JPG
+  - IMG_0168 3.JPG
+  - IMG_0168.JPG
+  - IMG_0169.JPG
+  - IMG_0170.JPG
+  - IMG_0171.JPG
+  - IMG_0172.JPG
+  - IMG_0173.JPG
+  - IMG_0174.JPG
+  - IMG_0175.JPG
+  - IMG_0176.JPG
+  - IMG_0177.JPG
+  - IMG_0178.JPG
+  - IMG_3332.jpg
+  - IMG_3720.jpg
+  - IMG_3739.jpg
+  - IMG_4357.jpg
+  - IMG_4429.jpg
+  - IMG_4459.jpg
+  - IMG_4554.jpg
+  - IMG_4721.jpg
+  - IMG_4729.jpg
+  - IMG_4745.jpg
+  - IMG_4763.jpg
+  - IMG_4886.jpg
+  - IMG_4893.jpg
+  - IMG_5109.jpg
+  - IMG_5389.jpg
+  - IMG_5405.jpg
+  - IMG_5407.jpg
+  - IMG_5448.jpg
+  - IMG_5551.jpg
+  - IMG_5553.jpg
+  - IMG_5554.jpg
+  - IMG_5567.jpg
+  - IMG_5568.jpg
+  - IMG_5569.jpg
+  - IMG_5570.jpg
+  - IMG_5571.jpg
+  - IMG_5572.jpg
+  - IMG_5574.jpg
+  - IMG_5690.jpg
+  - IMG_5700.jpg
+  - IMG_5701.jpg
+  - IMG_5702.jpg
+  - IMG_5703.jpg
+  - IMG_5705.jpg
+  - IMG_5877.jpg
+  - IMG_5878.jpg
+  - IMG_5970.jpg
+  - IMG_5971.jpg
+  - IMG_5978.jpg
+  - IMG_5995.jpg
+  - IMG_6002.jpg
+  - IMG_6003.jpg
+  - IMG_6010.jpg
+  - IMG_6163.jpg
+  - IMG_6202.jpg
+  - IMG_6208.jpg
+  - IMG_6218.jpg
+  - IMG_6298.jpg
+  - IMG_6307.jpg
+  - IMG_6314.jpg
+  - IMG_6315.jpg
+  - IMG_6327.jpg
+  - IMG_6328.jpg
+  - IMG_6329.jpg
+  - IMG_6335.jpg
+  - IMG_6336.jpg
+  - IMG_6337.jpg
+  - IMG_6458.jpg
+  - IMG_6459.jpg
+  - IMG_6475.jpg
+  - IMG_6619.jpg
+  - IMG_6627.jpg
+  - IMG_6662.jpg
+  - IMG_6676.jpg
+  - IMG_6707.jpg
+  - IMG_6708.jpg
+  - IMG_6709.jpg
+  - IMG_6724.jpg
+  - IMG_6725.jpg
+  - IMG_6726.jpg
+  - IMG_6727.jpg
+  - IMG_6744.jpg
+  - IMG_6745.jpg
+  - IMG_6751.jpg
+  - IMG_6752.jpg
+  - IMG_6759.jpg
+  - IMG_6760.jpg
+  - IMG_6761.jpg
+  - IMG_6768.jpg
+  - IMG_6769.jpg
+  - IMG_6888.jpg
+  - IMG_6889.jpg
+  - IMG_7700.jpg
+  - IMG_8233.jpg
+  - IMG_8236.jpg
+  - IMG_8243.jpg
+  - IMG_8244 (1).jpg
+  - IMG_8244.jpg
+  - IMG_8245.jpg
+  - IMG_8246.jpg
+  - IMG_8259.jpg
+  - IMG_8294.jpg
+  - IMG_8662.jpg
+  - IMG_8698.jpg
+  - IMG_8895.jpg
+  - IMG_8896.jpg
+  - IMG_8897.jpg
+  - IMG_8898.jpg
+  - IMG_8899.jpg
+  - IMG_8900.jpg
+  - IMG_8949.jpg
+  - IMG_8950.jpg
+  - IMG_8951.jpg
+  - IMG_8952.jpg
+  - IMG_8953.jpg
+
+Folder: \projects\development-civil
+  - development (1).jpg
+  - development (1).png
+  - development (10).jpg
+  - development (11).jpg
+  - development (12).jpg
+  - development (13).jpg
+  - development (14).jpg
+  - development (15).jpg
+  - development (16).jpg
+  - development (17).jpg
+  - development (18).jpg
+  - development (19).jpg
+  - development (2).jpg
+  - development (20).jpg
+  - development (3).jpg
+  - development (4).jpg
+  - development (5).jpg
+  - development (6).jpg
+  - development (7).jpg
+  - development (8).jpg
+  - development (9).jpg
+
+Folder: \projects\High Alpine Mtn. Ranch
+  - High001 COVER.JPG
+  - High0010.JPG
+  - High0011.JPG
+  - High0012.JPG
+  - High0013.JPG
+  - High002.jpg
+  - High003.JPG
+  - High004.jpg
+  - High005.JPG
+  - High006.JPG
+  - High007.JPG
+  - High008.JPG
+  - High009.JPG
+
+Folder: \projects\hillside-cleanup
+  - 001 COVER.jpg
+  - 0010.JPG
+  - 0011.jpg
+  - 0012.jpg
+  - 0013.JPG
+  - 0014.jpg
+  - 0015.jpg
+  - 0016.jpg
+  - 002.JPG
+  - 003.JPG
+  - 004.JPG
+  - 005.JPG
+  - 006.jpg
+  - 007.jpg
+  - 008.JPG
+  - 009.JPG
+
+Folder: \projects\laguna-grande
+  - 6.0 Laguna Grande Design Build_001_COVER.png
+  - 6.0 Laguna Grande Design Build_002_(2).png
+  - 6.0 Laguna Grande Design Build_003.png
+  - 6.0 Laguna Grande Design Build_004.100.png
+  - 6.0 Laguna Grande Design Build_004.png
+  - 6.0 Laguna Grande Design Build_005.png
+  - 6.0 Laguna Grande Design Build_006.png
+
+Folder: \projects\Mtn. Mid-Rise Luxe Condo
+  - Montana001 COVER.jpg
+  - Montana0010.jpg
+  - Montana0011.jpg
+  - Montana0012.jpg
+  - Montana002.jpg
+  - Montana003.jpg
+  - Montana004.JPG
+  - Montana005.jpg
+  - Montana006.JPG
+  - Montana007.JPG
+  - Montana008.JPG
+  - Montana009.jpg
+
+Folder: \projects\New Residential Construction
+  - Pacific001 COVER.JPG
+  - Pacific0010.JPG
+  - Pacific0011.JPG
+  - Pacific002.JPG
+  - Pacific003.png
+  - Pacific004.png
+  - Pacific005.JPG
+  - Pacific006.JPG
+  - Pacific007.JPG
+  - Pacific008.JPG
+  - Pacific009.JPG
+
+Folder: \projects\north-florida
+  - 27437780b0f39fc6f1d17c7310ca5be8l-m1rd-w1280_h960.webp
+  - 27437780b0f39fc6f1d17c7310ca5be8l-m2rd-w1280_h960.webp
+  - NScreenshot 2025-10-30 001316.png
+  - NScreenshot 2025-10-31 222048.png
+
+Folder: \projects\pacific-grove
+  - 001 COVER.JPG
+  - 0010.JPG
+  - 0011.JPG
+  - 002.JPG
+  - 003.png
+  - 004.png
+  - 005.JPG
+  - 006.JPG
+  - 007.JPG
+  - 008.JPG
+  - 009.JPG
+
+Folder: \projects\S. Florida High Rise Luxe
+  - Miami001 COVER.jpg
+  - Miami0010.JPG
+  - Miami0011.JPG
+  - Miami0013.JPG
+  - Miami0014.JPG
+  - Miami0015.jpg
+  - Miami0016.JPG
+  - Miami0018.JPG
+  - Miami0019.JPG
+  - Miami002.PNG
+  - Miami0020.PNG
+  - Miami0021.jpg
+  - Miami0022.jpg
+  - Miami0023.jpg
+  - Miami0024.jpg
+  - Miami0025.jpg
+  - Miami0026.JPG
+  - Miami0027.JPG
+  - Miami0028.jpg
+  - Miami0029.jpg
+  - Miami003.PNG
+  - Miami0030.jpg
+  - Miami0031.jpg
+  - Miami0032.jpg
+  - Miami0033.jpg
+  - Miami0034.jpg
+  - Miami0035.jpg
+  - Miami0036.jpg
+  - Miami0037.jpg
+  - Miami0038.jpg
+  - Miami0039.jpg
+  - Miami004.JPG
+  - Miami0040.jpg
+  - Miami0041.jpg
+  - Miami0042.jpg
+  - Miami0043.jpg
+  - Miami0044.jpg
+  - Miami0045.jpg
+  - Miami0046.jpg
+  - Miami005.JPG
+  - Miami0050.5.JPG
+  - Miami0051.5.JPG
+  - Miami0053.jpg
+  - Miami006.jpg
+  - Miami007.JPG
+  - Miami008.JPG
+  - Miami009.JPG
+  - Miami34DAB821-8F76-43F0-9EB9-164A0EE4B881.JPG
+
+Folder: \projects\Syracuse House
+  - syracuse (1).PNG
+  - syracuse (28).PNG
+  - syracuse (29).PNG
+  - syracuse (30).PNG
+  - syracuse (31).PNG
+  - syracuse (32).PNG
+  - syracuse (33).PNG
+  - syracuse (34).PNG
+  - syracuse (35).PNG
+  - syracuse (36).PNG
+  - syracuse (37).PNG
+  - syracuse (38).PNG
+  - syracuse (39).PNG
+  - syracuse (40).PNG
+  - syracuse (41).PNG
+  - syracuse (42).PNG
+  - syracuse (43).PNG
+  - syracuse (44).PNG
+  - syracuse (45).PNG
+  - syracuse (46).PNG
+  - syracuse (47).PNG
+  - syracuse (48).PNG
+  - syracuse (49).PNG
+  - syracuse (50).PNG
+  - syracuse (51).PNG
+  - syracuse (52).PNG
+  - syracuse (53).PNG
+  - syracuse-1.png
+  - syracuse-10.png
+  - syracuse-11.png
+  - syracuse-12.png
+  - syracuse-13.png
+  - syracuse-14.png
+  - syracuse-15.png
+  - syracuse-16.png
+  - syracuse-17.png
+  - syracuse-18.png
+  - syracuse-19.png
+  - syracuse-2.png
+  - syracuse-20.png
+  - syracuse-21.png
+  - syracuse-22.png
+  - syracuse-23.png
+  - syracuse-24.png
+  - syracuse-25.png
+  - syracuse-26.png
+  - syracuse-27.png
+  - syracuse-28.png
+  - syracuse-29.png
+  - syracuse-3.png
+  - syracuse-30.png
+  - syracuse-31.png
+  - syracuse-32.png
+  - syracuse-33.png
+  - syracuse-34.png
+  - syracuse-35.png
+  - syracuse-36.png
+  - syracuse-37.png
+  - syracuse-38.png
+  - syracuse-39.png
+  - syracuse-4.png
+  - syracuse-40.png
+  - syracuse-41.png
+  - syracuse-42.png
+  - syracuse-43.png
+  - syracuse-44.png
+  - syracuse-45.png
+  - syracuse-46.PNG
+  - syracuse-47.png
+  - syracuse-48.png
+  - syracuse-49.png
+  - syracuse-5.png
+  - syracuse-50.png
+  - syracuse-51.png
+  - syracuse-52.png
+  - syracuse-53.png
+  - syracuse-6.png
+  - syracuse-7.png
+  - syracuse-8.png
+  - syracuse-9.png
+  - syracuse-cover.png
+
+Folder: \projects\Ultra Luxe Private Pool
+  - 001.jpg
+  - 0010.JPG
+  - 0011.JPEG
+  - 002.JPEG
+  - 003.JPEG
+  - 004.JPG
+  - 005.JPG
+  - 006.JPG
+  - 007.JPG
+  - 009.jpg
+  - 010.jpg
+  - 011.jpg
+  - 012.JPG
+  - 027.jpg
+  - 032.jpg
+  - 033.jpg
+  - 034.jpg
+  - 035.jpg
+  - 036.jpg
+  - 14.jpg
+  - 15.jpg
+  - 16.jpg
+  - 17.jpg
+  - 18.jpg
+  - 19.jpg
+  - 20.jpg
+  - 21.jpg
+  - 22.jpg
+  - 23.jpg
+  - 24.jpg
+  - 25.jpg
+  - 26.jpg
+  - 27.jpg
+  - 28.jpg
+  - 29.jpg
+  - 30.jpg
+  - 31.jpg
+  - Gemini_Generated_Image_pypxogpypxogpypx.png
+  - Gemini_Generated_Image_vtxey6vtxey6vtxe (1).png
+  - hospitality-pool-cover-v2.jpg
+
+Folder: \design\exterior
+  - 1.png
+  - 2.png
+  - cover.png
+
+Folder: \design\finishes
+  - imagejpeg_0.jpg
+  - IMG_2751.jpg
+  - IMG_3317.jpg
+  - IMG_3318.jpg
+  - IMG_3319.jpg
+  - IMG_3320.jpg
+  - IMG_3727.jpg
+  - IMG_4332.jpg
+  - IMG_4429.jpg
+  - IMG_4430.jpg
+  - IMG_4883.jpg
+  - IMG_5101.jpg
+  - IMG_5102.jpg
+  - IMG_5112.jpg
+  - IMG_5117.jpg
+  - IMG_6629.jpg
+  - IMG_6680.jpg
+  - IMG_6794.jpg
+
+Folder: \design\furniture
+  - 1.png
+  - 2.png
+  - cover.png
+
+Folder: \design\interiors
+  - 1.png
+  - 2.png
+  - cover.png
+
+Folder: \design\lighting
+  - 168093.jpeg
+  - 168095.jpeg
+  - 168096.jpeg
+  - image000000(2).jpg
+  - image000000(4).jpg
+  - image000001(1).jpg
+  - image000001(3).jpg
+  - image000002.jpg
+  - image000003(1).jpg
+  - IMG_3154.PNG
+  - IMG_4621.PNG
+  - IMG_5551.jpg
+  - IMG_5552.jpg
+  - IMG_5553.jpg
+  - IMG_5563.jpg
+  - IMG_5564.jpg
+  - IMG_5565.jpg
+  - IMG_5566.jpg
+  - IMG_5569.jpg
+  - IMG_5570.jpg
+  - IMG_5571.jpg
+  - IMG_5573.jpg
+  - IMG_5574.jpg
+  - IMG_5575.jpg
+  - IMG_8238.jpg
+  - IMG_8242.jpg
+  - IMG_8243.jpg
+
+Folder: \design\n-florida
+  - NIMG_9178.jpg
+  - NIMG_9179.jpg
+  - NIMG_9180.jpg
+  - NIMG_9182.jpg
+  - NIMG_9184.jpg
+  - NIMG_9185.jpg
+  - NIMG_9890.jpg
+  - NIMG_9892.jpg
+  - NIMG_9893.jpg
+  - NIMG_9894.jpg
+  - NIMG_9895.jpg
+  - NScreenshot 2025-10-30 001316.png
+  - NScreenshot 2025-10-31 222048.png
+
+Folder: \design\pools
+  - DACD2091-90E3-4F85-A4FF-21D26671BF8C (1).jpg
+  - IMG_0166 2.JPG
+
+Folder: \design\renderings
+  - 1.png
+  - 2.png
+  - cover.png
+
+Folder: \design\southcoast-kitchen
+  - 11 Kitchen AFTER.jpg
+  - 12 Kitchen After.jpg
+  - 13 Kitchen After.jpg
+  - 18 Living Rm AFTER.JPG
+  - 20 Living Dining AFTER.jpg
+  - 22 Living After.JPG
+  - 24 Living After.JPG
+  - 35 AFTER.JPG
+  - 36 AFTER.JPG
+  - 37 AFTER.jpg
+  - 38 AFTER.jpg
+  - 39 AFTER.jpg
+  - 40 AFTER.jpg
+  - 41 AFTER.jpg
+  - 42 AFTER.jpg
+  - 43 AFTER.jpg
+  - 44 AFTER.JPG
+  - 45 AFTER.JPG
+  - 46 AFTER.JPG
+  - 47 AFTER.JPG
