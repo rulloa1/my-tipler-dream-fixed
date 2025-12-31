@@ -90,7 +90,17 @@ export const useGalleryOrder = (projectId: string, defaultImages: string[]) => {
 
   const [isEditMode, setIsEditMode] = useState(false);
 
-  const toggleEditMode = () => setIsEditMode(prev => !prev);
+  const toggleEditMode = () => {
+    setIsEditMode(prev => {
+      const newState = !prev;
+      if (newState) {
+        toast.success("Edit mode enabled - You can now drag to reorder images");
+      } else {
+        toast.info("Edit mode disabled");
+      }
+      return newState;
+    });
+  };
 
   // Allow editing if admin OR manually enabled
   const isEditable = isAdmin || isEditMode;

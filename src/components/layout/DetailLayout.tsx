@@ -142,9 +142,9 @@ export const DetailLayout = ({
 
               <div className="mt-8 flex justify-end">
                 <Button
-                  variant="ghost"
+                  variant="outline"
                   onClick={toggleEditMode}
-                  className="text-cream/40 hover:text-primary hover:bg-transparent text-xs flex items-center gap-2"
+                  className="border-primary/50 text-cream hover:bg-primary hover:text-charcoal transition-colors text-xs flex items-center gap-2"
                 >
                   <Settings2 className="w-3 h-3" />
                   {isEditable ? "Disable Editing" : "Enable Editing"}
