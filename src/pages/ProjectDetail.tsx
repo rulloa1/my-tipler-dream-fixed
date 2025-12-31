@@ -7,16 +7,12 @@ import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useGalleryOrder } from "@/hooks/useGalleryOrder";
 import { DetailLayout } from "@/components/layout/DetailLayout";
-import { AIRedesignDialog } from "@/components/gallery/AIRedesignDialog";
 import { ProcessView } from "@/components/gallery/ProcessView";
 import { supabase } from "@/integrations/supabase/client";
 
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = id ? getProjectById(id) : undefined;
-
-  const [isRedesignOpen, setIsRedesignOpen] = useState(false);
-  const [redesignImage, setRedesignImage] = useState("");
 
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -37,17 +33,6 @@ const ProjectDetail = () => {
     toggleEditMode,
     saveGalleryOrder
   } = useGalleryOrder(id || "", defaultGallery);
-
-  const handleEditImage = (image: string) => {
-    setRedesignImage(image);
-    setIsRedesignOpen(true);
-  };
-
-  const handleSaveRedesign = (newImageUrl: string) => {
-    // Add the new image to the start of the gallery
-    const newGallery = [newImageUrl, ...galleryImages];
-    saveGalleryOrder(newGallery);
-  };
 
   const handleAddImage = async (file: File) => {
     let publicUrl = "";
@@ -368,13 +353,6 @@ const ProjectDetail = () => {
             </section>
           )
         }
-      />
-
-      <AIRedesignDialog
-        isOpen={isRedesignOpen}
-        onClose={() => setIsRedesignOpen(false)}
-        imageUrl={redesignImage}
-        onSave={handleSaveRedesign}
       />
     </>
   );
