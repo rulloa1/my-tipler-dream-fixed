@@ -14,9 +14,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: index * 0.1 }}
-            className="sticky top-24 mb-[20vh] h-[70vh] w-full flex flex-col md:flex-row bg-white overflow-hidden shadow-2xl border border-concrete-200"
+            className="sticky top-24 mb-12 md:mb-[20vh] min-h-[500px] md:h-[70vh] w-full flex flex-col md:flex-row bg-white overflow-hidden shadow-2xl border border-concrete-200"
         >
-            <div className="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden group">
+            <div className="w-full md:w-1/2 h-[40vh] md:h-full relative overflow-hidden group">
                 <img
                     src={project.coverImage}
                     alt={project.title}
