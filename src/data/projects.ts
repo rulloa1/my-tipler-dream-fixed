@@ -28,140 +28,6 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // 1. Beachfront Estate
-  {
-    id: "beachfront-estate",
-    title: "Beachfront Estate",
-    subtitle: "Residence",
-    category: "Residential • Development • Construct",
-    location: "Abaco, Bahamas",
-    description: "We developed a 2.5-acre beachfront estate, creating a 6,800 sq ft main residence that embodies luxury Caribbean living. This premier property features 180 feet of private beach frontage and is fortified with Category 5 hurricane-resistant construction. The estate is a self-sufficient oasis, with an infinity pool, guest cottage, dock facilities, solar power backup, and rainwater collection systems. This is more than a home; it is a legacy property on the shores of the Atlantic.",
-    coverImage: "/projects/beachfront_estate/beachfront-1.jpg",
-    gallery: [
-      "/projects/beachfront_estate/beachfront-1.jpg",
-      "/projects/beachfront_estate/beachfront-2.jpg",
-      "/projects/beachfront_estate/beachfront-3.jpg",
-      "/projects/beachfront_estate/beachfront-4.jpg",
-      "/projects/beachfront_estate/beachfront-5.jpg",
-      "/projects/beachfront_estate/beachfront-6.jpg",
-      "/projects/beachfront_estate/beachfront-7.jpg",
-      "/projects/beachfront_estate/Whisk_063db5aec58ad9db29e44f785c5f8954eg.jpg",
-      "/projects/beachfront_estate/Whisk_cdbe2863291f901a0e0430c0610d75f0eg.jpg"
-    ],
-    sqft: "6,800",
-    lotSize: "2.5 Acres",
-    role: "Project Manager in a Foreign Country for US Owners",
-  },
-  // 2. Development Civil Construction
-  {
-    id: "development-civil-construction",
-    title: "Development Civil Construction",
-    subtitle: "Civil Construction",
-    category: "Residential • Development • Civil Construction",
-    location: "SE Texas",
-    description: "Comprehensive civil construction and development project in Southeast Texas, involving extensive infrastructure work, site preparation, and utility installation for residential development.",
-    coverImage: "/projects/Civil Engineering/Civil001 COVER.jpg", // Using Civil Engineering cover as placeholder/best guess
-    gallery: [
-      "/projects/Civil Engineering/Civil001 COVER.jpg",
-      "/projects/Civil Engineering/Civil002.JPG"
-    ],
-    role: "Civil Construction Manager",
-  },
-  // 3. New Residential in Historic Neighborhood (Pacific Grove)
-  {
-    id: "pacific-grove",
-    title: "New Residential",
-    subtitle: "in Historic Neighborhood",
-    category: "Residential Design/Build",
-    location: "Central Coast, CA",
-    description: "Custom residential construction in the beautiful Pacific Grove area, respecting the historic character of the neighborhood while introducing modern living standards.",
-    coverImage: "/projects/pacific-grove/001 COVER.JPG",
-    gallery: [
-      "/projects/pacific-grove/001 COVER.JPG",
-      "/projects/pacific-grove/0010.JPG",
-      "/projects/pacific-grove/0011.JPG",
-      "/projects/pacific-grove/002.JPG",
-      "/projects/pacific-grove/003.png",
-      "/projects/pacific-grove/004.png",
-      "/projects/pacific-grove/005.JPG",
-      "/projects/pacific-grove/006.JPG",
-      "/projects/pacific-grove/007.JPG",
-      "/projects/pacific-grove/008.JPG",
-      "/projects/pacific-grove/009.JPG"
-    ]
-  },
-  // 4. Carmel Forest to Ocean View
-  {
-    id: "carmel-forest-ocean",
-    title: "Carmel Forest to Ocean View",
-    subtitle: "Custom Addition",
-    category: "Residential Construction",
-    location: "Carmel By the Sea, CA",
-    description: "This project is a celebration of its stunning location, a coastal home that harmonizes with the natural beauty of the Carmel coastline. Our focus was on refined craftsmanship and thoughtful design, creating a space that feels both luxurious and deeply connected to its environment. The result is a home that is more than a structure; it is a serene retreat.",
-    coverImage: "/projects/Carmel Forest to Ocean View/Carmel001 COVER.JPG",
-    gallery: [
-      "/projects/Carmel Forest to Ocean View/Carmel001 COVER.JPG",
-      "/projects/Carmel Forest to Ocean View/Carmel002.JPG",
-      "/projects/Carmel Forest to Ocean View/Carmel003.JPG",
-      "/projects/Carmel Forest to Ocean View/Carmel004.JPG",
-      "/projects/Carmel Forest to Ocean View/Carmel005.JPG",
-      "/projects/Carmel Forest to Ocean View/Carmel006.JPG"
-    ],
-    role: "Designer, Builder, Project Manager",
-  },
-  // 5. Hillside Restoration
-  {
-    id: "hillside-cleanup",
-    title: "Hillside Stabilization",
-    subtitle: "Restoration & Environmental Clean Up",
-    category: "Civil • Residential",
-    location: "Carmel, CA",
-    description: "Restoration and environmental cleanup of hillside properties to improve safety, aesthetics, and ecological balance.",
-    coverImage: "/projects/hillside-cleanup/001 COVER.jpg",
-    gallery: [
-      "/projects/hillside-cleanup/001 COVER.jpg",
-      "/projects/hillside-cleanup/0010.JPG",
-      "/projects/hillside-cleanup/0011.jpg",
-      "/projects/hillside-cleanup/0012.jpg",
-      "/projects/hillside-cleanup/0013.JPG",
-      "/projects/hillside-cleanup/0014.jpg",
-      "/projects/hillside-cleanup/0015.jpg",
-      "/projects/hillside-cleanup/0016.jpg",
-      "/projects/hillside-cleanup/002.JPG",
-      "/projects/hillside-cleanup/003.JPG",
-      "/projects/hillside-cleanup/004.JPG",
-      "/projects/hillside-cleanup/005.JPG",
-      "/projects/hillside-cleanup/006.jpg",
-      "/projects/hillside-cleanup/007.jpg",
-      "/projects/hillside-cleanup/008.JPG",
-      "/projects/hillside-cleanup/009.JPG"
-    ]
-  },
-  // 6. Laguna Grande
-  {
-    id: "laguna-grande",
-    title: "Laguna Grande",
-    subtitle: "Spanish Revival Commercial",
-    category: "Design/Build • Commercial",
-    location: "Seaside, CA",
-    description: "A comprehensive design-build project showcasing integrated architectural and landscape solutions in the Spanish Revival style.",
-    coverImage: "/projects/laguna-grande/6.0 Laguna Grande Design Build_001_COVER.jpg",
-    gallery: [
-      "/projects/laguna-grande/6.0 Laguna Grande Design Build_001_COVER.jpg",
-      "/projects/laguna-grande/6.0 Laguna Grande Design Build_002_(2).jpg",
-      "/projects/laguna-grande/6.0 Laguna Grande Design Build_003.jpg",
-      "/projects/laguna-grande/6.0 Laguna Grande Design Build_004.100.png",
-      "/projects/laguna-grande/6.0 Laguna Grande Design Build_004.png",
-      "/projects/laguna-grande/6.0 Laguna Grande Design Build_005.png",
-      "/projects/laguna-grande/6.0 Laguna Grande Design Build_006.png"
-    ]
-  },
-
-
-
-
-
-  // 12. South Coast Renovation
   {
     id: "south-coast-renovation",
     title: "South Coast Renovation",
@@ -195,7 +61,6 @@ export const projects: Project[] = [
     sqft: "3,800",
     role: "Project Manager, Owner Representative, Designer, Int. Designer, Builder, Property Manager, Owner Assignee - During Photo Ad Campaign and Cinema Movie Shoots",
   },
-  // 13. Carmel Valley New
   {
     id: "carmel-valley-new",
     title: "Carmel Valley New",
@@ -214,7 +79,6 @@ export const projects: Project[] = [
     sqft: "4,800",
     role: "Designer, Builder, Project Manager, Civil Engineering Contractor",
   },
-  // 14. North Florida Renovation/Addition
   {
     id: "north-florida-renovation",
     title: "North Florida Renovation/Addition",
@@ -244,24 +108,6 @@ export const projects: Project[] = [
     sqft: "3,600 (Orig) / 1,200 (Add)",
     role: "Contractor",
   },
-  // 15. Abaco Luxe Boat House
-  {
-    id: "abaco-luxe-boat-house",
-    title: "Abaco Luxe Boat House",
-    subtitle: "Construction",
-    category: "Residential Construction",
-    location: "Abaco, Bahamas",
-    description: "On the pristine shores of the Abaco Islands, we constructed an 1,800 sq ft luxury boat house in just six months. Built to withstand the Caribbean climate, this waterfront structure features hurricane-resistant construction and premium marine-grade finishes. Custom mahogany millwork and covered dock access provide a touch of elegance, creating a functional and beautiful gateway to the open water.",
-    coverImage: "/projects/Abaco Luxe Boat House/Homes Built BoatHouse Style at Bakers Bay.jpg",
-    gallery: [
-      "/projects/Abaco Luxe Boat House/Homes Built BoatHouse Style at Bakers Bay.jpg",
-      "/projects/Abaco Luxe Boat House/bahamas1.png",
-      "/projects/Abaco Luxe Boat House/Whisk_d1a02c96626dfbeb9a54986f4fa3fd4ddr.jpeg"
-    ],
-    sqft: "1,800",
-    role: "Project Manager in a Foreign Country for US Owners",
-  },
-  // 16. Coastal Mountain Residence
   {
     id: "coastal-mountain-residence",
     title: "Coastal Mountain Resid",
@@ -292,7 +138,6 @@ export const projects: Project[] = [
     retainingWalls: "320 ln ft",
     role: "Owner Representative, Designer, Builder, Project Manager, Permit Procurement",
   },
-  // 17. Carmel Knolls
   {
     id: "carmel-knolls",
     title: "Carmel Knolls",
@@ -334,7 +179,6 @@ export const projects: Project[] = [
     decking: "1,400 sq ft",
     role: "Designer, Int. Designer, Builder, Project Manager, Permit Procurement",
   },
-  // 18. Coastal Restoration
   {
     id: "coastal-restoration",
     title: "Coastal Restoration",
@@ -365,7 +209,22 @@ export const projects: Project[] = [
     retainingWalls: "180 ln ft",
     role: "Civil Engineering Contractor, Builder, Permit Procurement (Emergency Construction Permit)",
   },
-  // 19. Civil Engineering
+  {
+    id: "abaco-luxe-boat-house",
+    title: "Abaco Luxe Boat House",
+    subtitle: "Construction",
+    category: "Residential Construction",
+    location: "Abaco, Bahamas",
+    description: "On the pristine shores of the Abaco Islands, we constructed an 1,800 sq ft luxury boat house in just six months. Built to withstand the Caribbean climate, this waterfront structure features hurricane-resistant construction and premium marine-grade finishes. Custom mahogany millwork and covered dock access provide a touch of elegance, creating a functional and beautiful gateway to the open water.",
+    coverImage: "/projects/Abaco Luxe Boat House/Homes Built BoatHouse Style at Bakers Bay.jpg",
+    gallery: [
+      "/projects/Abaco Luxe Boat House/Homes Built BoatHouse Style at Bakers Bay.jpg",
+      "/projects/Abaco Luxe Boat House/bahamas1.png",
+      "/projects/Abaco Luxe Boat House/Whisk_d1a02c96626dfbeb9a54986f4fa3fd4ddr.jpeg"
+    ],
+    sqft: "1,800",
+    role: "Project Manager in a Foreign Country for US Owners",
+  },
   {
     id: "civil-engineering",
     title: "Civil Eng. & Infrastructure",
@@ -399,6 +258,128 @@ export const projects: Project[] = [
       "/projects/Civil Engineering/Civil009.JPG"
     ],
     role: "Civil Engineering, Contractor/Builder",
+  },
+  {
+    id: "beachfront-estate",
+    title: "Beachfront Estate",
+    subtitle: "Residence",
+    category: "Residential • Development • Construct",
+    location: "Abaco, Bahamas",
+    description: "We developed a 2.5-acre beachfront estate, creating a 6,800 sq ft main residence that embodies luxury Caribbean living. This premier property features 180 feet of private beach frontage and is fortified with Category 5 hurricane-resistant construction. The estate is a self-sufficient oasis, with an infinity pool, guest cottage, dock facilities, solar power backup, and rainwater collection systems. This is more than a home; it is a legacy property on the shores of the Atlantic.",
+    coverImage: "/projects/beachfront_estate/beachfront-1.jpg",
+    gallery: [
+      "/projects/beachfront_estate/beachfront-1.jpg",
+      "/projects/beachfront_estate/beachfront-2.jpg",
+      "/projects/beachfront_estate/beachfront-3.jpg",
+      "/projects/beachfront_estate/beachfront-4.jpg",
+      "/projects/beachfront_estate/beachfront-5.jpg",
+      "/projects/beachfront_estate/beachfront-6.jpg",
+      "/projects/beachfront_estate/beachfront-7.jpg",
+      "/projects/beachfront_estate/Whisk_063db5aec58ad9db29e44f785c5f8954eg.jpg",
+      "/projects/beachfront_estate/Whisk_cdbe2863291f901a0e0430c0610d75f0eg.jpg"
+    ],
+    sqft: "6,800",
+    lotSize: "2.5 Acres",
+    role: "Project Manager in a Foreign Country for US Owners",
+  },
+  {
+    id: "development-civil-construction",
+    title: "Development Civil Construction",
+    subtitle: "Civil Construction",
+    category: "Residential • Development • Civil Construction",
+    location: "SE Texas",
+    description: "Comprehensive civil construction and development project in Southeast Texas, involving extensive infrastructure work, site preparation, and utility installation for residential development.",
+    coverImage: "/projects/Civil Engineering/Civil001 COVER.jpg",
+    gallery: [
+      "/projects/Civil Engineering/Civil001 COVER.jpg",
+      "/projects/Civil Engineering/Civil002.JPG"
+    ],
+    role: "Civil Construction Manager",
+  },
+  {
+    id: "pacific-grove",
+    title: "New Residential",
+    subtitle: "in Historic Neighborhood",
+    category: "Residential Design/Build",
+    location: "Central Coast, CA",
+    description: "Custom residential construction in the beautiful Pacific Grove area, respecting the historic character of the neighborhood while introducing modern living standards.",
+    coverImage: "/projects/pacific-grove/001 COVER.JPG",
+    gallery: [
+      "/projects/pacific-grove/001 COVER.JPG",
+      "/projects/pacific-grove/0010.JPG",
+      "/projects/pacific-grove/0011.JPG",
+      "/projects/pacific-grove/002.JPG",
+      "/projects/pacific-grove/003.png",
+      "/projects/pacific-grove/004.png",
+      "/projects/pacific-grove/005.JPG",
+      "/projects/pacific-grove/006.JPG",
+      "/projects/pacific-grove/007.JPG",
+      "/projects/pacific-grove/008.JPG",
+      "/projects/pacific-grove/009.JPG"
+    ]
+  },
+  {
+    id: "carmel-forest-ocean",
+    title: "Carmel Forest to Ocean View",
+    subtitle: "Custom Addition",
+    category: "Residential Construction",
+    location: "Carmel By the Sea, CA",
+    description: "This project is a celebration of its stunning location, a coastal home that harmonizes with the natural beauty of the Carmel coastline. Our focus was on refined craftsmanship and thoughtful design, creating a space that feels both luxurious and deeply connected to its environment. The result is a home that is more than a structure; it is a serene retreat.",
+    coverImage: "/projects/Carmel Forest to Ocean View/Carmel001 COVER.JPG",
+    gallery: [
+      "/projects/Carmel Forest to Ocean View/Carmel001 COVER.JPG",
+      "/projects/Carmel Forest to Ocean View/Carmel002.JPG",
+      "/projects/Carmel Forest to Ocean View/Carmel003.JPG",
+      "/projects/Carmel Forest to Ocean View/Carmel004.JPG",
+      "/projects/Carmel Forest to Ocean View/Carmel005.JPG",
+      "/projects/Carmel Forest to Ocean View/Carmel006.JPG"
+    ],
+    role: "Designer, Builder, Project Manager",
+  },
+  {
+    id: "hillside-cleanup",
+    title: "Hillside Stabilization",
+    subtitle: "Restoration & Environmental Clean Up",
+    category: "Civil • Residential",
+    location: "Carmel, CA",
+    description: "Restoration and environmental cleanup of hillside properties to improve safety, aesthetics, and ecological balance.",
+    coverImage: "/projects/hillside-cleanup/001 COVER.jpg",
+    gallery: [
+      "/projects/hillside-cleanup/001 COVER.jpg",
+      "/projects/hillside-cleanup/0010.JPG",
+      "/projects/hillside-cleanup/0011.jpg",
+      "/projects/hillside-cleanup/0012.jpg",
+      "/projects/hillside-cleanup/0013.JPG",
+      "/projects/hillside-cleanup/0014.jpg",
+      "/projects/hillside-cleanup/0015.jpg",
+      "/projects/hillside-cleanup/0016.jpg",
+      "/projects/hillside-cleanup/002.JPG",
+      "/projects/hillside-cleanup/003.JPG",
+      "/projects/hillside-cleanup/004.JPG",
+      "/projects/hillside-cleanup/005.JPG",
+      "/projects/hillside-cleanup/006.jpg",
+      "/projects/hillside-cleanup/007.jpg",
+      "/projects/hillside-cleanup/008.JPG",
+      "/projects/hillside-cleanup/009.JPG"
+    ]
+  },
+  {
+    id: "laguna-grande",
+    title: "Laguna Grande",
+    subtitle: "Spanish Revival Commercial",
+    category: "Design/Build • Commercial",
+    location: "Seaside, CA",
+    description: "A comprehensive design-build project showcasing integrated architectural and landscape solutions in the Spanish Revival style.",
+    coverImage: "/projects/laguna-grande/6.0 Laguna Grande Design Build_001_COVER.jpg",
+    gallery: [
+      "/projects/laguna-grande/6.0 Laguna Grande Design Build_001_COVER.jpg",
+      "/projects/laguna-grande/6.0 Laguna Grande Design Build_002_(2).jpg",
+      "/projects/laguna-grande/6.0 Laguna Grande Design Build_003.jpg",
+      "/projects/laguna-grande/6.0 Laguna Grande Design Build_004.100.png",
+      "/projects/laguna-grande/6.0 Laguna Grande Design Build_004.png",
+      "/projects/laguna-grande/6.0 Laguna Grande Design Build_005.png",
+      "/projects/laguna-grande/6.0 Laguna Grande Design Build_006.png"
+    ]
   }
 ];
 
