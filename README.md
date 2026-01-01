@@ -1,4 +1,4 @@
-# My Tipler Dream - Luxury Real Estate & Design Portfolio
+# My Chandler Dream - Luxury Construction & Design Portfolio
 
 A premium, high-end portfolio website for luxury real estate development and interior design. This project showcases architectural vision, execution, and design evolution through an elegant and immersive user experience.
 
