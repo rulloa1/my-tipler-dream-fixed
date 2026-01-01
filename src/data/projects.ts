@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   title: string;
   category: string;
+  filterCategory: string; // New field for broad filtering
   coverImage: string;
   description: string;
   gallery: string[];
@@ -33,6 +34,7 @@ export const projects: Project[] = [
     title: "South Coast Renovation",
     subtitle: "Complete Remodel",
     category: "Design/Build",
+    filterCategory: "Design/Build",
     location: "Big Sur, CA",
     description: "This 3,800 sq ft residence was completely reimagined through our design-build process. Over 16 months, we opened up the home to panoramic ocean views with new floor-to-ceiling windows and custom skylights. The interior transformation features white oak flooring, a gourmet kitchen with waterfall quartzite countertops, and spa-quality bathrooms with radiant heat. We undertook a complete structural renovation, culminating in a home that is as solid as it is beautiful, a true sanctuary on the Big Sur coast.",
     coverImage: "/design/southcoast/11 Kitchen AFTER.jpg",
@@ -66,6 +68,7 @@ export const projects: Project[] = [
     title: "Carmel Valley New",
     subtitle: "Custom Residence",
     category: "Design/Build • Civil",
+    filterCategory: "Design/Build",
     location: "Carmel Valley, CA",
     description: "In the heart of Carmel Valley, we crafted a 4,800 sq ft custom residence that is a dialogue between architecture and nature. This 20-month design-build project features exposed steel beams and floor-to-ceiling glass walls that frame the oak-studded landscape. We integrated the home with its surroundings through extensive site work and native habitat restoration, creating a dwelling that is both a part of and a tribute to the natural beauty of the valley.",
     coverImage: "/projects/carmel-valley-new/carmel_valley_new1 cover.jpg",
@@ -83,6 +86,7 @@ export const projects: Project[] = [
     id: "north-florida-renovation",
     title: "North Florida Renovation/Addition",
     category: "Owners Rep • Estate Management",
+    filterCategory: "Residential",
     location: "N. Florida",
     description: "We revitalized this 3,600 sq ft home with a 1,200 sq ft addition over a 10-month period. Our comprehensive approach included a new roof, impact windows, and updated electrical and plumbing systems. The interior was completely refreshed, and our estate management services ensured a seamless coordination of all trades. The result is a home that is not only more spacious and modern but also fortified and meticulously detailed.",
     coverImage: "/projects/north-florida/NIMG_9178.jpg",
@@ -113,6 +117,7 @@ export const projects: Project[] = [
     title: "Coastal Mountain Resid",
     subtitle: "Civil Site Work",
     category: "Civil • Residential",
+    filterCategory: "Civil",
     location: "Big Sur, CA",
     description: "Over 11 months, we reshaped a 1.2-acre mountain site in Big Sur, a project that required both heavy machinery and a delicate touch. We moved over 3,000 cubic yards of earth, constructed 320 linear feet of retaining walls, and built a 900 sq ft custom garage and workshop. Our work focused on erosion control and drainage systems, all while preserving the property's stunning ocean views and protecting the natural landscape.",
     coverImage: "/projects/Coastal_Mountain_Residence/001 COVER.JPG",
@@ -143,6 +148,7 @@ export const projects: Project[] = [
     title: "Carmel Knolls",
     subtitle: "More Than Lipstick on an Old Lady!",
     category: "Residential • Civil • Design/Build",
+    filterCategory: "Design/Build",
     location: "Carmel, CA",
     description: "This was more than a remodel; it was a complete transformation. Over 12 months, we took a 2,200 sq ft house and revitalized it from the ground up. The project included a new roofline, foundation repairs, 18 energy-efficient windows, and 1,400 sq ft of new composite decking. We also undertook extensive site work, including 200 linear feet of retaining walls and a complete landscape renovation, proving that with the right vision, any property can be reborn.",
     coverImage: "/projects/carmel-knolls/001 Cover Carmel Knolls, CA Remodel, Before & After.jpg",
@@ -184,6 +190,7 @@ export const projects: Project[] = [
     title: "Coastal Restoration",
     subtitle: "Erosion Repair",
     category: "Civil",
+    filterCategory: "Civil",
     location: "Monterey Peninsula, CA",
     description: "Faced with a dramatically eroded coastal property, we undertook a nine-month restoration project to preserve this spectacular oceanfront site. We moved over 2,500 cubic yards of material, installed 180 linear feet of engineered retaining walls, and performed comprehensive foundation work. This project was a battle against the elements, a successful effort to stabilize and restore a piece of the California coastline for generations to come.",
     coverImage: "/projects/coastal-restoration/001 COVER.JPG",
@@ -214,6 +221,7 @@ export const projects: Project[] = [
     title: "Abaco Luxe Boat House",
     subtitle: "Construction",
     category: "Residential Construction",
+    filterCategory: "Residential",
     location: "Abaco, Bahamas",
     description: "On the pristine shores of the Abaco Islands, we constructed an 1,800 sq ft luxury boat house in just six months. Built to withstand the Caribbean climate, this waterfront structure features hurricane-resistant construction and premium marine-grade finishes. Custom mahogany millwork and covered dock access provide a touch of elegance, creating a functional and beautiful gateway to the open water.",
     coverImage: "/projects/Abaco Luxe Boat House/Homes Built BoatHouse Style at Bakers Bay.jpg",
@@ -230,6 +238,7 @@ export const projects: Project[] = [
     title: "Civil Eng. & Infrastructure",
     subtitle: "Infrastructure Projects",
     category: "Civil",
+    filterCategory: "Civil",
     location: "CA, TX, NM, CO, MT",
     description: "Our civil engineering portfolio is a testament to our ability to tackle complex infrastructure challenges across five states. From 2015 to 2024, we have moved over 50,000 cubic yards of earth, installed more than 2,500 linear feet of retaining walls, and executed numerous coastal restoration and hillside stabilization projects. Our expertise in heavy construction and infrastructure development allows us to deliver exceptional results, even in the most challenging terrains.",
     coverImage: "/projects/Civil Engineering/Civil001 COVER.jpg",
@@ -264,6 +273,7 @@ export const projects: Project[] = [
     title: "Beachfront Estate",
     subtitle: "Residence",
     category: "Residential • Development • Construct",
+    filterCategory: "Residential",
     location: "Abaco, Bahamas",
     description: "We developed a 2.5-acre beachfront estate, creating a 6,800 sq ft main residence that embodies luxury Caribbean living. This premier property features 180 feet of private beach frontage and is fortified with Category 5 hurricane-resistant construction. The estate is a self-sufficient oasis, with an infinity pool, guest cottage, dock facilities, solar power backup, and rainwater collection systems. This is more than a home; it is a legacy property on the shores of the Atlantic.",
     coverImage: "/projects/beachfront_estate/beachfront-1.jpg",
@@ -287,6 +297,7 @@ export const projects: Project[] = [
     title: "Development Civil Construction",
     subtitle: "Civil Construction",
     category: "Residential • Development • Civil Construction",
+    filterCategory: "Civil",
     location: "SE Texas",
     description: "Comprehensive civil construction and development project in Southeast Texas, involving extensive infrastructure work, site preparation, and utility installation for residential development.",
     coverImage: "/projects/Civil Engineering/Civil001 COVER.jpg",
@@ -301,6 +312,7 @@ export const projects: Project[] = [
     title: "New Residential",
     subtitle: "in Historic Neighborhood",
     category: "Residential Design/Build",
+    filterCategory: "Residential",
     location: "Central Coast, CA",
     description: "Custom residential construction in the beautiful Pacific Grove area, respecting the historic character of the neighborhood while introducing modern living standards.",
     coverImage: "/projects/pacific-grove/001 COVER.JPG",
@@ -323,6 +335,7 @@ export const projects: Project[] = [
     title: "Carmel Forest to Ocean View",
     subtitle: "Custom Addition",
     category: "Residential Construction",
+    filterCategory: "Residential",
     location: "Carmel By the Sea, CA",
     description: "This project is a celebration of its stunning location, a coastal home that harmonizes with the natural beauty of the Carmel coastline. Our focus was on refined craftsmanship and thoughtful design, creating a space that feels both luxurious and deeply connected to its environment. The result is a home that is more than a structure; it is a serene retreat.",
     coverImage: "/projects/Carmel Forest to Ocean View/Carmel001 COVER.JPG",
@@ -341,6 +354,7 @@ export const projects: Project[] = [
     title: "Hillside Stabilization",
     subtitle: "Restoration & Environmental Clean Up",
     category: "Civil • Residential",
+    filterCategory: "Civil",
     location: "Carmel, CA",
     description: "Restoration and environmental cleanup of hillside properties to improve safety, aesthetics, and ecological balance.",
     coverImage: "/projects/hillside-cleanup/001 COVER.jpg",
@@ -368,6 +382,7 @@ export const projects: Project[] = [
     title: "Laguna Grande",
     subtitle: "Spanish Revival Commercial",
     category: "Design/Build • Commercial",
+    filterCategory: "Commercial",
     location: "Seaside, CA",
     description: "A comprehensive design-build project showcasing integrated architectural and landscape solutions in the Spanish Revival style.",
     coverImage: "/projects/laguna-grande/6.0 Laguna Grande Design Build_001_COVER.jpg",
@@ -387,4 +402,4 @@ export const getProjectById = (id: string) => {
   return projects.find((project) => project.id === id);
 };
 
-export const categories = ["All", ...new Set(projects.map((project) => project.category))];
+export const categories = ["All", "Residential", "Commercial", "Civil", "Design/Build"];

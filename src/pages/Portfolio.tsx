@@ -28,14 +28,14 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 
 // Sortable Project Card Wrapper
-const SortableProjectCard = ({ 
-  project, 
-  children, 
-  isEditable 
-}: { 
-  project: { id: string }; 
-  children: React.ReactNode; 
-  isEditable: boolean; 
+const SortableProjectCard = ({
+  project,
+  children,
+  isEditable
+}: {
+  project: { id: string };
+  children: React.ReactNode;
+  isEditable: boolean;
 }) => {
   const {
     attributes,
@@ -60,13 +60,13 @@ const SortableProjectCard = ({
 
   return (
     <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="touch-none">
-       {/* Visual indicator for drag handle if needed, or just draggable card */}
-       {children}
-       {isEditable && (
-         <div className="absolute top-2 right-2 bg-charcoal/80 text-cream p-1 rounded z-50 pointer-events-none opacity-50">
-           <Settings2 className="w-4 h-4" />
-         </div>
-       )}
+      {/* Visual indicator for drag handle if needed, or just draggable card */}
+      {children}
+      {isEditable && (
+        <div className="absolute top-2 right-2 bg-charcoal/80 text-cream p-1 rounded z-50 pointer-events-none opacity-50">
+          <Settings2 className="w-4 h-4" />
+        </div>
+      )}
     </div>
   );
 };
@@ -79,11 +79,11 @@ const Portfolio = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
   // Use the new project order hook
-  const { 
-    projects: orderedProjects, 
-    isEditable, 
-    toggleEditMode, 
-    saveProjectOrder 
+  const {
+    projects: orderedProjects,
+    isEditable,
+    toggleEditMode,
+    saveProjectOrder
   } = useProjectOrder(projects);
 
   const { scrollYProgress } = useScroll({
@@ -104,7 +104,7 @@ const Portfolio = () => {
 
   const filteredProjects = activeFilter === "All"
     ? orderedProjects
-    : orderedProjects.filter(p => p.category === activeFilter);
+    : orderedProjects.filter(p => p.filterCategory === activeFilter);
 
   // DnD Sensors
   const sensors = useSensors(
@@ -163,7 +163,7 @@ const Portfolio = () => {
                 Our Work
               </span>
             </div>
-            
+
             <h1 className="text-6xl md:text-8xl font-serif text-cream mb-8 leading-none">
               The Portfolio <br />
               <span className="italic text-white/40 font-light">Collection</span>
@@ -178,14 +178,14 @@ const Portfolio = () => {
 
         {/* Vertical Text Decoration */}
         <div className="absolute right-12 top-1/2 -translate-y-1/2 hidden lg:block z-20">
-           <div className="h-32 w-[1px] bg-white/10 mx-auto mb-8" />
-           <p 
+          <div className="h-32 w-[1px] bg-white/10 mx-auto mb-8" />
+          <p
             className="text-[10px] tracking-[0.4em] text-white/30 font-light uppercase"
             style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
-           >
-             Est. 1987
-           </p>
-           <div className="h-32 w-[1px] bg-white/10 mx-auto mt-8" />
+          >
+            Est. 1987
+          </p>
+          <div className="h-32 w-[1px] bg-white/10 mx-auto mt-8" />
         </div>
       </section>
 
@@ -272,9 +272,9 @@ const Portfolio = () => {
               >
                 <AnimatePresence mode="popLayout">
                   {filteredProjects.map((project, index) => (
-                    <SortableProjectCard 
-                      key={project.id} 
-                      project={project} 
+                    <SortableProjectCard
+                      key={project.id}
+                      project={project}
                       isEditable={isEditable && activeFilter === "All"}
                     >
                       <motion.div
