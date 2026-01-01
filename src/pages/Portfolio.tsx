@@ -1,89 +1,21 @@
 import Layout from "@/components/layout/Layout";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { ArrowRight, Settings2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useSearchParams } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { projects, categories } from "@/data/projects";
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useProjectOrder } from "@/hooks/useProjectOrder";
-
-// DnD Imports
-import {
-  DndContext,
-  closestCenter,
-  KeyboardSensor,
-  PointerSensor,
-  useSensor,
-  useSensors,
-  DragEndEvent,
-} from "@dnd-kit/core";
-import {
-  arrayMove,
-  SortableContext,
-  sortableKeyboardCoordinates,
-  rectSortingStrategy,
-  useSortable,
-} from "@dnd-kit/sortable";
-import { CSS } from "@dnd-kit/utilities";
-
-// Sortable Project Card Wrapper
-const SortableProjectCard = ({
-  project,
-  children,
-  isEditable
-}: {
-  project: { id: string };
-  children: React.ReactNode;
-  isEditable: boolean;
-}) => {
-  const {
-    attributes,
-    listeners,
-    setNodeRef,
-    transform,
-    transition,
-    isDragging,
-  } = useSortable({ id: project.id });
-
-  const style = {
-    transform: CSS.Transform.toString(transform),
-    transition,
-    zIndex: isDragging ? 50 : 1,
-    opacity: isDragging ? 0.5 : 1,
-    position: "relative" as const,
-  };
-
-  if (!isEditable) {
-    return <>{children}</>;
-  }
-
-  return (
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="touch-none">
-      {/* Visual indicator for drag handle if needed, or just draggable card */}
-      {children}
-      {isEditable && (
-        <div className="absolute top-2 right-2 bg-charcoal/80 text-cream p-1 rounded z-50 pointer-events-none opacity-50">
-          <Settings2 className="w-4 h-4" />
-        </div>
-      )}
-    </div>
-  );
-};
+import { ProjectCard } from "@/components/ProjectCard";
 
 const Portfolio = () => {
   const [searchParams] = useSearchParams();
   const categoryFromUrl = searchParams.get("category");
   const [activeFilter, setActiveFilter] = useState(categoryFromUrl || "All");
-  const navigate = useNavigate();
   const heroRef = useRef<HTMLDivElement>(null);
 
-  // Use the new project order hook
+  // Use the project order hook (keeping it for data fetching, but disabling drag for now)
   const {
     projects: orderedProjects,
-    isEditable,
-    toggleEditMode,
-    saveProjectOrder
   } = useProjectOrder(projects);
 
   const { scrollYProgress } = useScroll({
@@ -105,32 +37,6 @@ const Portfolio = () => {
   const filteredProjects = activeFilter === "All"
     ? orderedProjects
     : orderedProjects.filter(p => p.filterCategory === activeFilter);
-
-  // DnD Sensors
-  const sensors = useSensors(
-    useSensor(PointerSensor, {
-      activationConstraint: {
-        distance: 8, // Require 8px movement to start drag
-      },
-    }),
-    useSensor(KeyboardSensor, {
-      coordinateGetter: sortableKeyboardCoordinates,
-    })
-  );
-
-  const handleDragEnd = (event: DragEndEvent) => {
-    const { active, over } = event;
-
-    if (over && active.id !== over.id) {
-      const oldIndex = orderedProjects.findIndex((p) => p.id === active.id);
-      const newIndex = orderedProjects.findIndex((p) => p.id === over.id);
-
-      if (oldIndex !== -1 && newIndex !== -1) {
-        const newProjects = arrayMove(orderedProjects, oldIndex, newIndex);
-        saveProjectOrder(newProjects);
-      }
-    }
-  };
 
   return (
     <Layout>
@@ -238,128 +144,29 @@ const Portfolio = () => {
                   Found {filteredProjects.length} Architectural Artifacts
                 </p>
               </motion.div>
-
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={toggleEditMode}
-                className="border-primary/50 text-charcoal hover:bg-primary hover:text-charcoal transition-colors text-[10px] flex items-center gap-2 h-8"
-              >
-                <Settings2 className="w-3 h-3" />
-                {isEditable ? "Done" : "Edit Order"}
-              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Projects Grid - Premium Framer Layout */}
+      {/* Projects Stack */}
       <section className="py-24 bg-background min-h-screen">
-        <div className="container mx-auto px-12 lg:px-20">
-          <DndContext
-            sensors={sensors}
-            collisionDetection={closestCenter}
-            onDragEnd={handleDragEnd}
-          >
-            <SortableContext
-              items={filteredProjects.map((p) => p.id)}
-              strategy={rectSortingStrategy}
-              disabled={!isEditable || activeFilter !== "All"}
-            >
-              <motion.div
-                layout
-                className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16"
-              >
-                <AnimatePresence mode="popLayout">
-                  {filteredProjects.map((project, index) => (
-                    <SortableProjectCard
-                      key={project.id}
-                      project={project}
-                      isEditable={isEditable && activeFilter === "All"}
-                    >
-                      <motion.div
-                        layout
-                        initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                        animate={{ opacity: 1, scale: 1, y: 0 }}
-                        exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-                        transition={{
-                          duration: 0.7,
-                          ease: [0.16, 1, 0.3, 1],
-                          delay: (index % 3) * 0.1
-                        }}
-                        className="h-full"
-                      >
-                        <Link
-                          to={`/project/${project.id}`}
-                          className="group block h-full"
-                          onClick={(e) => {
-                            if (isEditable && activeFilter === "All") {
-                              e.preventDefault();
-                            }
-                          }}
-                        >
-                          {/* Perspective Image Container */}
-                          <div className="relative aspect-[4/5] overflow-hidden bg-muted mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-700">
-                            <img
-                              src={project.coverImage}
-                              alt={project.title}
-                              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-all duration-700 backdrop-blur-[2px] flex items-center justify-center">
-                              <div className="px-8 py-4 border border-cream/30 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-700 delay-100">
-                                <span className="text-cream text-[10px] tracking-[0.4em] uppercase font-bold">View Archive</span>
-                              </div>
-                            </div>
-                            <div className="absolute top-6 left-6 inline-block py-1 px-3 bg-charcoal/60 backdrop-blur-md border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                              <p className="text-cream text-[8px] tracking-[0.2em] uppercase font-bold">{project.category}</p>
-                            </div>
-                          </div>
+        <div className="container mx-auto px-4 sm:px-12 lg:px-20">
+          <div className="flex flex-col gap-0 pb-24">
+            {filteredProjects.map((project, index) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                index={index}
+              />
+            ))}
+          </div>
 
-                          {/* Text Content - Refined Alignment */}
-                          <div className="space-y-3 px-1">
-                            <div className="flex items-center gap-3">
-                              <div className="w-8 h-[1px] bg-gold opacity-30 group-hover:w-16 group-hover:bg-gold transition-all duration-700" />
-                              <span className="text-[10px] tracking-[0.2em] text-gold uppercase font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                                Explore
-                              </span>
-                            </div>
-                            <h3 className="font-serif text-3xl text-charcoal group-hover:text-primary transition-colors duration-500 leading-tight">
-                              {project.title}
-                            </h3>
-                            <div className="flex justify-between items-center pt-2 border-t border-border/50">
-                              <p className="text-xs text-muted-foreground font-light tracking-wide italic">
-                                {project.location}
-                              </p>
-                              <ArrowRight className="w-4 h-4 text-gold opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0" />
-                            </div>
-                          </div>
-                        </Link>
-                      </motion.div>
-                    </SortableProjectCard>
-                  ))}
-                </AnimatePresence>
-              </motion.div>
-            </SortableContext>
-          </DndContext>
-
-          {/* CTA - Refined */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-center mt-24"
-          >
-            <Link to="/contact">
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-charcoal text-charcoal hover:bg-charcoal hover:text-cream transition-all duration-500 text-[11px] tracking-[0.2em] uppercase font-light px-10 py-6"
-              >
-                Start Your Project
-                <ArrowRight className="w-4 h-4 ml-3" />
-              </Button>
-            </Link>
-          </motion.div>
+          {filteredProjects.length === 0 && (
+            <div className="text-center py-20">
+              <p className="text-xl text-muted-foreground">No projects found in this category.</p>
+            </div>
+          )}
         </div>
       </section>
     </Layout>
