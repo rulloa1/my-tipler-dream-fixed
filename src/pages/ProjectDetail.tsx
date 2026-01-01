@@ -9,6 +9,7 @@ import { useGalleryOrder } from "@/hooks/useGalleryOrder";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { ProcessView } from "@/components/gallery/ProcessView";
 import { supabase } from "@/integrations/supabase/client";
+import ImageEditor from "@/components/ImageEditor";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -33,6 +34,24 @@ const ProjectDetail = () => {
     toggleEditMode,
     saveGalleryOrder
   } = useGalleryOrder(id || "", defaultGallery);
+
+  const [editingImage, setEditingImage] = useState<string | null>(null);
+
+  const handleEditImage = (image: string) => {
+    setEditingImage(image);
+  };
+
+  const handleSaveEditedImage = (newUrl: string) => {
+    if (editingImage) {
+      const index = galleryImages.indexOf(editingImage);
+      if (index !== -1) {
+        const newGallery = [...galleryImages];
+        newGallery[index] = newUrl;
+        saveGalleryOrder(newGallery);
+      }
+      setEditingImage(null);
+    }
+  };
 
   const handleAddImage = async (file: File) => {
     let publicUrl = "";
@@ -354,6 +373,17 @@ const ProjectDetail = () => {
           )
         }
       />
+      {editingImage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+          <div className="w-full max-w-4xl">
+            <ImageEditor
+              imageUrl={editingImage}
+              onSave={handleSaveEditedImage}
+              onCancel={() => setEditingImage(null)}
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 };

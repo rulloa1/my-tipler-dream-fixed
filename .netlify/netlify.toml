@@ -7,7 +7,7 @@ redirects = []
 [functions."*"]
 
 [build]
-publish = "C:\\Users\\roryu\\my-tipler-dream-5\\dist"
+publish = "C:\\Users\\roryu\\Projects\\active\\my-tipler-dream-fixed\\dist"
 publishOrigin = "ui"
 commandOrigin = "ui"
 command = "npm run build"
