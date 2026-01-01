@@ -7,13 +7,16 @@ import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useGalleryOrder } from "@/hooks/useGalleryOrder";
 import { DetailLayout } from "@/components/layout/DetailLayout";
+import { AIRedesignDialog } from "@/components/gallery/AIRedesignDialog";
 import { ProcessView } from "@/components/gallery/ProcessView";
 import { supabase } from "@/integrations/supabase/client";
-import ImageEditor from "@/components/ImageEditor";
 
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = id ? getProjectById(id) : undefined;
+
+  const [isRedesignOpen, setIsRedesignOpen] = useState(false);
+  const [redesignImage, setRedesignImage] = useState("");
 
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -35,22 +38,15 @@ const ProjectDetail = () => {
     saveGalleryOrder
   } = useGalleryOrder(id || "", defaultGallery);
 
-  const [editingImage, setEditingImage] = useState<string | null>(null);
-
   const handleEditImage = (image: string) => {
-    setEditingImage(image);
+    setRedesignImage(image);
+    setIsRedesignOpen(true);
   };
 
-  const handleSaveEditedImage = (newUrl: string) => {
-    if (editingImage) {
-      const index = galleryImages.indexOf(editingImage);
-      if (index !== -1) {
-        const newGallery = [...galleryImages];
-        newGallery[index] = newUrl;
-        saveGalleryOrder(newGallery);
-      }
-      setEditingImage(null);
-    }
+  const handleSaveRedesign = (newImageUrl: string) => {
+    // Add the new image to the start of the gallery
+    const newGallery = [newImageUrl, ...galleryImages];
+    saveGalleryOrder(newGallery);
   };
 
   const handleAddImage = async (file: File) => {
@@ -373,17 +369,13 @@ const ProjectDetail = () => {
           )
         }
       />
-      {editingImage && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-          <div className="w-full max-w-4xl">
-            <ImageEditor
-              imageUrl={editingImage}
-              onSave={handleSaveEditedImage}
-              onCancel={() => setEditingImage(null)}
-            />
-          </div>
-        </div>
-      )}
+
+      <AIRedesignDialog
+        isOpen={isRedesignOpen}
+        onClose={() => setIsRedesignOpen(false)}
+        imageUrl={redesignImage}
+        onSave={handleSaveRedesign}
+      />
     </>
   );
 };
