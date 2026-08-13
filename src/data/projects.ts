@@ -502,7 +502,7 @@ export const projects: Project[] = [
       "/projects/Syracuse%20House/syracuse-cover.jpg",
       "/projects/Syracuse%20House/syracuse-1.jpg",
       "/projects/Syracuse%20House/syracuse-2.png",
-      "/projects/Syracuse%20House/syracuse-3.png",
+      "/projects/Syracuse%20House/3.png",
       "/projects/Syracuse%20House/syracuse-4.png",
       "/projects/Syracuse%20House/syracuse-5.png",
       "/projects/Syracuse%20House/syracuse-6.png",
@@ -601,8 +601,6 @@ export const projects: Project[] = [
       "/projects/Ultra%20Luxe%20Private%20Pool/8.jpg",
       "/projects/Ultra%20Luxe%20Private%20Pool/006.jpg",
       "/projects/Ultra%20Luxe%20Private%20Pool/009.jpg",
-      "/projects/Ultra%20Luxe%20Private%20Pool/010.jpg",
-      "/projects/Ultra%20Luxe%20Private%20Pool/011.jpg",
       "/projects/Ultra%20Luxe%20Private%20Pool/012.JPG",
       "/projects/Ultra%20Luxe%20Private%20Pool/14.jpg",
       "/projects/Ultra%20Luxe%20Private%20Pool/15.jpg",
@@ -627,8 +625,7 @@ export const projects: Project[] = [
       "/projects/Ultra%20Luxe%20Private%20Pool/033.jpg",
       "/projects/Ultra%20Luxe%20Private%20Pool/034.jpg",
       "/projects/Ultra%20Luxe%20Private%20Pool/035.jpg",
-      "/projects/Ultra%20Luxe%20Private%20Pool/036.jpg",
-      "/projects/Ultra%20Luxe%20Private%20Pool/0011.JPEG"
+      "/projects/Ultra%20Luxe%20Private%20Pool/036.jpg"
     ],
     poolSize: "189,000 gallons",
     projectArea: "3 Acres",
